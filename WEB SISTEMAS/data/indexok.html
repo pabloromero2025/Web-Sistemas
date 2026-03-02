@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistemas Inteligentes | Desarrollo de Software</title>
+  <meta name="description" content="Sistemas Inteligentes: desarrollo a medida en Python, Web, Apps y Automatización." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --brand:#16a34a; --brand2:#00b7ff; }
+    html{ scroll-behavior:smooth; }
+    body{ font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass{ background:rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+    .neon{ text-shadow:0 0 8px rgba(0,183,255,.65); }
+    .shadow-soft{ box-shadow:0 10px 40px rgba(0,0,0,.25); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-emerald-500 grid place-content-center shadow-soft">
+          <span class="font-black">SI</span>
+        </div>
+        <span class="font-extrabold tracking-tight text-lg">Sistemas Inteligentes</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-cyan-300" href="#servicios">Servicios</a>
+        <a class="hover:text-cyan-300" href="#tecnologias">Tecnologías</a>
+        <a class="hover:text-cyan-300" href="#portfolio">Portfolio</a>
+        <a class="hover:text-cyan-300" href="#faq">FAQ</a>
+        <a class="px-4 py-2 rounded-xl bg-cyan-500/90 hover:bg-cyan-400 text-slate-900 font-semibold" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-cyan-900/20 via-emerald-900/10 to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-cyan-300/90 font-semibold">Desarrollo de software a medida</p>
+          <h1 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+            Construimos <span class="text-cyan-400">apps</span>, <span class="text-emerald-400">sistemas</span> y <span class="text-cyan-300">automatizaciones</span>
+          </h1>
+          <p class="mt-5 text-slate-300 text-lg">Llevamos tus ideas a producción con tecnología moderna: Python, FastAPI, React, Flutter, SQLite/PostgreSQL, integraciones (MercadoPago, WhatsApp, Email) y más.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contacto" class="px-6 py-3 rounded-2xl bg-cyan-500 text-slate-900 font-bold hover:bg-cyan-400">Solicitar presupuesto</a>
+            <a href="#portfolio" class="px-6 py-3 rounded-2xl border border-white/15 hover:border-cyan-400/60">Ver proyectos</a>
+          </div>
+          <div class="mt-6 text-sm text-slate-400">Tiempo de entrega ágil · Código documentado · Soporte post‑entrega</div>
+        </div>
+        <div class="glass rounded-3xl border border-white/10 p-6 md:p-10 shadow-soft">
+          <img 
+            alt="Logo Sistemas Inteligentes" 
+            class="w-full rounded-2xl border border-white/10" 
+            src="../img/Logo Sistemas 2.jpg" 
+            onerror="this.outerHTML='<div class=\'text-center py-16\'><div class=\'text-4xl font-black\'>SISTEMAS</div><div class=\'text-cyan-400 text-4xl font-black\'>INTELIGENTES</div><p class=\'mt-4 text-slate-400\'>Imagen no encontrada en <code>../img/</code></p></div>'"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="py-16 md:py-24 border-t border-white/10 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Servicios</h2>
+      <p class="mt-2 text-slate-400">Soluciones integrales de punta a punta.</p>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Aplicaciones Web</h3>
+          <p class="mt-2 text-slate-300">Frontends modernos (React/Tailwind) y APIs robustas (FastAPI/Node). Autenticación, roles, dashboards, reportes a Excel.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Escritorio & POS</h3>
+          <p class="mt-2 text-slate-300">Sistemas en Python (Tkinter/PyQt/Kivy) con SQLite/PostgreSQL. Impresión de tickets, lectores de códigos de barras.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Apps Móviles</h3>
+          <p class="mt-2 text-slate-300">Flutter para Android/iOS: inventario, ventas, formularios offline y sincronización.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Automatización & Bots</h3>
+          <p class="mt-2 text-slate-300">Scraping, bots de WhatsApp/Telegram, integraciones con MercadoPago, envío de PDFs por email.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Data & Dashboards</h3>
+          <p class="mt-2 text-slate-300">ETL con Pandas, reportes, Power BI y generación de Excel a medida.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Mantenimiento</h3>
+          <p class="mt-2 text-slate-300">Soporte, mejoras evolutivas, packaging (.exe) e instalación con Inno Setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Tecnologías</h2>
+      <p class="mt-2 text-slate-400">Stack moderno, estable y escalable.</p>
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <span class="glass p-3 rounded-xl text-center">Python</span>
+        <span class="glass p-3 rounded-xl text-center">FastAPI</span>
+        <span class="glass p-3 rounded-xl text-center">React</span>
+        <span class="glass p-3 rounded-xl text-center">Flutter</span>
+        <span class="glass p-3 rounded-xl text-center">SQLite / PostgreSQL</span>
+        <span class="glass p-3 rounded-xl text-center">Tailwind CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-16 md:py-24 border-y border-white/10 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex items-end justify-between">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Portfolio</h2>
+          <p class="mt-2 text-slate-400">Algunos trabajos recientes en funcionamiento.</p>
+        </div>
+        <a href="#contacto" class="mt-4 md:mt-0 px-4 py-2 rounded-xl border border-white/15 hover:border-cyan-400/60">Quiero algo así</a>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="glass rounded-2xl p-5 border border-white/10 flex flex-col">
+          <div class="aspect-video w-full mb-4 overflow-hidden rounded-xl shadow-lg">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/08HUGzXMO-Q" title="Gestión de Barbería" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h3 class="mt-2 font-bold">Gestión de Barbería</h3>
+          <p class="text-sm text-slate-300 mt-1">Caja, ventas, stock, pago a barberos, reportes a Excel. Python + SQLite.</p>
+        </article>
+
+        <article class="glass rounded-2xl p-5 border border-white/10 flex flex-col">
+          <div class="aspect-video w-full mb-4 overflow-hidden rounded-xl shadow-lg">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/tY910rDr47s" title="Sistema de Ventas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h3 class="mt-2 font-bold">Sistema de Ventas</h3>
+          <p class="text-sm text-slate-300 mt-1">Catálogo con carrito, envío de pedidos por WhatsApp/email, MercadoPago.</p>
+        </article>
+
+        <article class="glass rounded-2xl p-5 border border-white/10 flex flex-col">
+          <div class="aspect-video w-full mb-4 overflow-hidden rounded-xl shadow-lg">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xQeSalPM4sU" title="Programa Kioscos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h3 class="mt-2 font-bold">Programa Kioscos</h3>
+          <p class="text-sm text-slate-300 mt-1">Gestión ágil de ventas, proveedores y control de stock optimizado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Planes</h2>
+      <p class="mt-2 text-slate-400">Elegí el que mejor se adapte. También hacemos a medida.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Landing</h3>
+          <p class="text-slate-300 mt-1">Página institucional, 1 semana.</p>
+          <ul class="mt-3 text-sm text-slate-300 list-disc list-inside space-y-1">
+            <li>Diseño moderno</li>
+            <li>Optimización SEO</li>
+            <li>Formulario de contacto</li>
+          </ul>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-cyan-400/40 ring-2 ring-cyan-400/40">
+          <h3 class="text-xl font-bold">Web + Backend</h3>
+          <p class="text-slate-300 mt-1">CRUD, login, reportes.</p>
+          <ul class="mt-3 text-sm text-slate-300 list-disc list-inside space-y-1">
+            <li>React + API FastAPI</li>
+            <li>Base de datos</li>
+            <li>Deploy</li>
+          </ul>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="text-xl font-bold">Full Suite</h3>
+          <p class="text-slate-300 mt-1">Web + móvil + escritorio.</p>
+          <ul class="mt-3 text-sm text-slate-300 list-disc list-inside space-y-1">
+            <li>Integraciones (MP, WhatsApp)</li>
+            <li>Soporte extendido</li>
+            <li>Capacitación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 md:py-24 border-y border-white/10 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Preguntas frecuentes</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="font-bold">¿Cómo trabajamos?</h3>
+          <p class="mt-2 text-slate-300">Brief, diseño, hitos semanales y entrega continua. Código en repositorio privado.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="font-bold">¿Qué hosting usan?</h3>
+          <p class="mt-2 text-slate-300">Estático: GitHub Pages/Netlify. Backend: Render/Fly.io. También on‑premise.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="font-bold">¿Facturan?</h3>
+          <p class="mt-2 text-slate-300">Sí. Emitimos factura y acuerdos de soporte.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 border border-white/10">
+          <h3 class="font-bold">¿Garantía?</h3>
+          <p class="mt-2 text-slate-300">Correcciones sin costo por bugs dentro de los 30 días posteriores a la entrega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Contáctanos</h2>
+          <p class="mt-2 text-slate-300">Respondemos rápido por WhatsApp o email.</p>
+          <div class="mt-6 space-y-1 text-slate-300">
+            <p><strong>WhatsApp:</strong> <a class="text-cyan-300 underline" href="https://wa.me/5491131467483" target="_blank" rel="noopener">+54 9 11 3146‑7483</a></p>
+            <p><strong>Instagram:</strong> <a class="text-cyan-300 underline" href="https://instagram.com/sistemasinteligentes0000" target="_blank" rel="noopener">@sistemasinteligentes0000</a></p>
+          </div>
+        </div>
+        <form id="quoteForm" class="glass rounded-2xl border border-white/10 p-6">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm text-slate-300">Nombre</label>
+              <input name="nombre" required class="mt-1 w-full rounded-xl bg-slate-900 border border-white/10 px-3 py-2 outline-none focus:border-cyan-400"/>
+            </div>
+            <div>
+              <label class="text-sm text-slate-300">Email</label>
+              <input name="email" type="email" required class="mt-1 w-full rounded-xl bg-slate-900 border border-white/10 px-3 py-2 outline-none focus:border-cyan-400"/>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm text-slate-300">Proyecto</label>
+              <textarea name="proyecto" rows="5" required class="mt-1 w-full rounded-xl bg-slate-900 border border-white/10 px-3 py-2 outline-none focus:border-cyan-400" placeholder="Contanos qué necesitás (web, app, automatización, etc.)"></textarea>
+            </div>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <button type="submit" class="px-6 py-3 rounded-2xl bg-emerald-500 text-slate-900 font-bold hover:bg-emerald-400">Enviar por WhatsApp</button>
+            <a id="emailBtn" href="#" class="px-6 py-3 rounded-2xl border border-white/15 hover:border-cyan-400/60">Enviar por Email</a>
+          </div>
+          <p class="mt-3 text-xs text-slate-400">¿Preferís email directo? Cambiá el enlace en <code>emailDestino</code>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-slate-400">© <span id="year"></span> Sistemas Inteligentes. Todos los derechos reservados.</p>
+      <p class="text-slate-400">Hecho con ❤ en Argentina.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const telefonoWA = '5491131467483';
+    const emailDestino = 'romeropablo401@gmail.com';
+
+    const form = document.getElementById('quoteForm');
+    const emailBtn = document.getElementById('emailBtn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const nombre = data.get('nombre');
+      const email = data.get('email');
+      const proyecto = data.get('proyecto');
+      const text = encodeURIComponent(`Hola! Soy ${nombre} (${email}). Quiero un presupuesto para:\n\n${proyecto}`);
+      window.open(`https://wa.me/${telefonoWA}?text=${text}`, '_blank');
+    });
+
+    emailBtn.addEventListener('click', (e) => {
+      const data = new FormData(form);
+      const nombre = data.get('nombre') || '';
+      const email = data.get('email') || '';
+      const proyecto = data.get('proyecto') || '';
+      const subject = encodeURIComponent('Consulta desde la web');
+      const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\n\nProyecto:\n${proyecto}`);
+      emailBtn.href = `mailto:${emailDestino}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>

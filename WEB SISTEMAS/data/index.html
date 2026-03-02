@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistemas Inteligentes | Desarrollo de Software</title>
+  <meta name="description" content="Sistemas Inteligentes: desarrollo a medida en Python, Web, Apps y Automatización." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --brand:#16a34a; --brand2:#00b7ff; }
+    html{ scroll-behavior:smooth; }
+    body{ font-family: 'Inter', sans-serif; }
+    .glass{ background:rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+    .neon{ text-shadow:0 0 8px rgba(0,183,255,.65); }
+    .shadow-soft{ box-shadow:0 10px 40px rgba(0,0,0,.25); }
+    
+    /* Animación simple para las tarjetas */
+    .card-hover:hover {
+      transform: translateY(-5px);
+      border-color: rgba(34, 211, 238, 0.4);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+
+  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-emerald-500 grid place-content-center shadow-soft">
+          <span class="font-black text-slate-900">SI</span>
+        </div>
+        <span class="font-extrabold tracking-tight text-lg">Sistemas Inteligentes</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-cyan-300 transition-colors" href="#servicios">Servicios</a>
+        <a class="hover:text-cyan-300 transition-colors" href="#tecnologias">Tecnologías</a>
+        <a class="hover:text-cyan-300 transition-colors" href="#portfolio">Portfolio</a>
+        <a class="hover:text-cyan-300 transition-colors" href="#faq">FAQ</a>
+        <a class="px-4 py-2 rounded-xl bg-cyan-500/90 hover:bg-cyan-400 text-slate-900 font-semibold transition-all" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-cyan-900/20 via-emerald-900/10 to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-cyan-300/90 font-semibold uppercase tracking-wider text-sm">Desarrollo de software a medida</p>
+          <h1 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+            Construimos <span class="text-cyan-400">apps</span>, <span class="text-emerald-400">sistemas</span> y <span class="text-cyan-300">automatizaciones</span>
+          </h1>
+          <p class="mt-5 text-slate-300 text-lg">Llevamos tus ideas a producción con tecnología moderna: Python, FastAPI, React, Flutter y más.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contacto" class="px-6 py-3 rounded-2xl bg-cyan-500 text-slate-900 font-bold hover:bg-cyan-400 transition-all">Solicitar presupuesto</a>
+            <a href="#portfolio" class="px-6 py-3 rounded-2xl border border-white/15 hover:border-cyan-400/60 transition-all">Ver proyectos</a>
+          </div>
+        </div>
+        <div class="glass rounded-3xl border border-white/10 p-6 md:p-10 shadow-soft">
+          <img alt="Logo Sistemas Inteligentes" class="w-full rounded-2xl border border-white/10" src="../img/Logo Sistemas 2.jpg" onerror="this.outerHTML='<div class=\'text-center py-16\'><div class=\'text-4xl font-black\'>SISTEMAS</div><div class=\'text-cyan-400 text-4xl font-black\'>INTELIGENTES</div></div>'"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="py-24 relative overflow-hidden bg-slate-950 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Soluciones de Ingeniería</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg">Transformamos procesos analógicos en sistemas digitales de alto rendimiento.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-3xl border border-white/10 card-hover">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center mb-6 border border-cyan-500/20 text-cyan-400">
+            <i class="fa-solid fa-globe text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Sistemas Web & APIs</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">Dashboards corporativos y APIs escalables con seguridad avanzada y roles de usuario.</p>
+          <div class="flex flex-wrap gap-2 text-[10px] text-cyan-300">
+            <span class="px-2 py-1 bg-slate-900 border border-white/10 rounded">FastAPI</span>
+            <span class="px-2 py-1 bg-slate-900 border border-white/10 rounded">React</span>
+          </div>
+        </div>
+
+        <div class="glass p-8 rounded-3xl border border-white/10 card-hover">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 border border-emerald-500/20 text-emerald-400">
+            <i class="fa-solid fa-desktop text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Software Desktop</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">Sistemas POS para locales, control de stock, facturación y conexión con ticketeras.</p>
+          <div class="flex flex-wrap gap-2 text-[10px] text-emerald-300">
+            <span class="px-2 py-1 bg-slate-900 border border-white/10 rounded">Python</span>
+            <span class="px-2 py-1 bg-slate-900 border border-white/10 rounded">SQLite</span>
+          </div>
+        </div>
+
+        <div class="glass p-8 rounded-3xl border border-white/10 card-hover">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-6 border border-purple-500/20 text-purple-400">
+            <i class="fa-solid fa-robot text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Automatización</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">Bots de WhatsApp, Scraping de datos e integraciones automáticas con MercadoPago.</p>
+          <div class="flex flex-wrap gap-2 text-[10px] text-purple-300">
+            <span class="px-2 py-1 bg-slate-900 border border-white/10 rounded">Selenium</span>
+            <span class="px-2 py-1 bg-slate-900 border border-white/10 rounded">Pandas</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-20 glass rounded-[40px] p-10 border border-white/5 bg-slate-900/40 text-center">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div><div class="text-2xl font-black text-cyan-500/30 mb-1 text-4xl">01</div><h4 class="font-bold">Análisis</h4></div>
+          <div><div class="text-2xl font-black text-emerald-500/30 mb-1 text-4xl">02</div><h4 class="font-bold">Desarrollo</h4></div>
+          <div><div class="text-2xl font-black text-purple-500/30 mb-1 text-4xl">03</div><h4 class="font-bold">Pruebas</h4></div>
+          <div><div class="text-2xl font-black text-orange-500/30 mb-1 text-4xl">04</div><h4 class="font-bold">Soporte</h4></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold mb-8">Nuestro Stack Tecnológico</h2>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+        <div class="glass p-4 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">Python</div>
+        <div class="glass p-4 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">FastAPI</div>
+        <div class="glass p-4 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">React</div>
+        <div class="glass p-4 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">Flutter</div>
+        <div class="glass p-4 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">PostgreSQL</div>
+        <div class="glass p-4 rounded-2xl border border-white/5 hover:border-cyan-500/30 transition-all">Tailwind</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-16 md:py-24 border-y border-white/10 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex items-end justify-between mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Portfolio</h2>
+          <p class="mt-2 text-slate-400">Proyectos reales en funcionamiento.</p>
+        </div>
+        <a href="#contacto" class="mt-4 md:mt-0 px-6 py-2 rounded-xl border border-white/15 hover:border-cyan-400/60 transition-all">Quiero algo así</a>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="glass rounded-3xl p-5 border border-white/10 flex flex-col card-hover">
+          <div class="aspect-video w-full mb-4 overflow-hidden rounded-2xl shadow-lg bg-black">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/08HUGzXMO-Q" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 class="font-bold text-lg px-2">Gestión de Barbería</h3>
+          <p class="text-xs text-slate-400 mt-2 px-2 pb-2 leading-relaxed">Control de turnos, liquidación de comisiones y stock.</p>
+        </article>
+
+        <article class="glass rounded-3xl p-5 border border-white/10 flex flex-col card-hover">
+          <div class="aspect-video w-full mb-4 overflow-hidden rounded-2xl shadow-lg bg-black">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/tY910rDr47s" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 class="font-bold text-lg px-2">Pedidos & Catálogo</h3>
+          <p class="text-xs text-slate-400 mt-2 px-2 pb-2 leading-relaxed">Catálogo web con carrito de compras y WhatsApp.</p>
+        </article>
+
+        <article class="glass rounded-3xl p-5 border border-white/10 flex flex-col card-hover">
+          <div class="aspect-video w-full mb-4 overflow-hidden rounded-2xl shadow-lg bg-black">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xQeSalPM4sU" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 class="font-bold text-lg px-2">Programa para Kioscos</h3>
+          <p class="text-xs text-slate-400 mt-2 px-2 pb-2 leading-relaxed">Ventas rápidas y control estricto de proveedores.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 md:py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold mb-10 text-center">Preguntas Frecuentes</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass p-6 rounded-2xl border border-white/10">
+          <h3 class="font-bold mb-2">¿Cómo trabajamos?</h3>
+          <p class="text-sm text-slate-400">Brief, hitos semanales y entrega continua con código documentado.</p>
+        </div>
+        <div class="glass p-6 rounded-2xl border border-white/10">
+          <h3 class="font-bold mb-2">¿Tienen garantía?</h3>
+          <p class="text-sm text-slate-400">Sí, ofrecemos 30 días de soporte post-entrega para correcciones sin costo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="text-4xl font-extrabold mb-6">Hablemos de tu proyecto</h2>
+          <p class="text-slate-300 mb-8 text-lg leading-relaxed">Estamos listos para ayudarte a escalar tu negocio con software de calidad.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-slate-900 transition-all">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+              </div>
+              <a href="https://wa.me/5491131467483" target="_blank" class="text-lg">+54 9 11 3146‑7483</a>
+            </div>
+            <div class="flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-900 transition-all">
+                <i class="fa-solid fa-envelope text-xl"></i>
+              </div>
+              <span>romeropablo401@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        
+        <form id="quoteForm" class="glass p-8 rounded-[32px] border border-white/10 relative overflow-hidden">
+          <div class="grid gap-6">
+            <input name="nombre" placeholder="Tu nombre" required class="w-full rounded-2xl bg-slate-900 border border-white/10 px-5 py-4 outline-none focus:border-cyan-400 transition-all"/>
+            <input name="email" type="email" placeholder="Tu email" required class="w-full rounded-2xl bg-slate-900 border border-white/10 px-5 py-4 outline-none focus:border-cyan-400 transition-all"/>
+            <textarea name="proyecto" rows="4" placeholder="¿En qué podemos ayudarte?" required class="w-full rounded-2xl bg-slate-900 border border-white/10 px-5 py-4 outline-none focus:border-cyan-400 transition-all"></textarea>
+            <button type="submit" class="w-full py-5 rounded-2xl bg-cyan-500 text-slate-900 font-black text-lg hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20">ENVIAR POR WHATSAPP</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-10 text-center">
+    <p class="text-slate-500 text-sm">© <span id="year"></span> Sistemas Inteligentes. Hecho con ❤ en Argentina.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const telefonoWA = '5491131467483';
+    const form = document.getElementById('quoteForm');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const text = encodeURIComponent(`¡Hola! Soy ${data.get('nombre')} (${data.get('email')}).\n\nConsulta: ${data.get('proyecto')}`);
+      window.open(`https://wa.me/${telefonoWA}?text=${text}`, '_blank');
+    });
+  </script>
+</body>
+</html>
